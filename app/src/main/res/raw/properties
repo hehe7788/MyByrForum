@@ -1,0 +1,5 @@
+# for local test
+#url = http://192.168.191.1:5000
+
+# for server test
+url = http://10.103.26.96:5000

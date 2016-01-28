@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/jsonTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TOP TEN TODAY"/>
+    <FrameLayout
+        android:id="@+id/top_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <ListView
+            android:id="@+id/top_ten_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+        <!-- The "loading indicator" view. This view overlaps with
+        the content, so the visibility of these two views
+        should be mutually exclusive. -->
+        <ProgressBar
+            android:id="@+id/loading_spinner"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/loading_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击刷新"
+            android:textSize="30dp"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+</LinearLayout>
